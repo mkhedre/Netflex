@@ -1,4 +1,6 @@
+// @ts-ignore
 import Head from 'next/head';
+// @ts-ignore
 import type { NextPage } from 'next';
 import Header from '../components/Header';
 import requests from '../utils/request';
