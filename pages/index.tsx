@@ -4,6 +4,18 @@ import Head from 'next/head';
 import type { NextPage } from 'next';
 import Header from '../components/Header';
 import requests from '../utils/request';
+import Banner from '../components/Banner';
+import { Movie } from '../types';
+interface props {
+  NetflixOriginals: Movie[];
+  Trending: Movie[];
+  TopRated: Movie[];
+  ActionMovies: Movie[];
+  ComedyMovies: Movie[];
+  HorrorMovies: Movie[];
+  RomanceMovies: Movie[];
+  Documentaries: Movie[];
+}
 const Home: NextPage = ({
   NetflixOriginals,
   Trending,
@@ -13,8 +25,7 @@ const Home: NextPage = ({
   HorrorMovies,
   RomanceMovies,
   Documentaries,
-}) => {
-  console.log(Trending);
+}: props) => {
   return (
     <div className="relative  bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]">
       <Head>
@@ -24,6 +35,7 @@ const Home: NextPage = ({
       </Head>
       <Header />
       <main>
+        <Banner NetflixOriginals={NetflixOriginals} />
         {/* row */}
         {/* row */}
         {/* row */}
