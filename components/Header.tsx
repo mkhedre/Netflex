@@ -1,4 +1,6 @@
+// @ts-ignore
 import { FiSearch } from 'react-icons/fi';
+// @ts-ignore
 import { BsFillBellFill } from 'react-icons/bs';
 import { useEffect, useState } from 'react';
 const Header = () => {
