@@ -5,11 +5,8 @@ import type { NextPage } from 'next';
 import Header from '../components/Header';
 import requests from '../utils/request';
 import Banner from '../components/Banner';
-import Show from '../components/Show';
 import { Movie } from '../types';
 // @ts-ignore
-import Swwiper from '../components/Swiper';
-import Nav from '../components/Nav';
 import Row from '../components/Row';
 
 interface props {
