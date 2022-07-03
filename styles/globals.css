@@ -20,7 +20,7 @@ a {
 
 @layer base {
   body {
-    @apply bg-[#141414] text-white;
+    @apply text-white !scrollbar !scrollbar-thumb-red-600 !scrollbar-track-transparent !scrollbar-thin;
   }
   header {
     @apply fixed;

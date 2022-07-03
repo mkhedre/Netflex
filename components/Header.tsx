@@ -21,7 +21,7 @@ const Header = () => {
   });
   return (
     <header
-      className={`container p-3 m-auto ${
+      className={`container p-3 m-auto z-10 ${
         isScrolled && ' bg-gray-500 text-black'
       }`}
     >
@@ -39,7 +39,7 @@ const Header = () => {
           <li className="headerlink">new & popular</li>
           <li className="headerlink">my list</li>
         </ul>
-        <div className="flex space-x-2 lg:space-x-7">
+        <div className="flex space-x-2 lg:space-x-5">
           <FiSearch />
           <BsFillBellFill />
         </div>
